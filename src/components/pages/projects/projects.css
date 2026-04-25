@@ -1,0 +1,170 @@
+
+
+.projects{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.project{
+    max-width: 360px;
+    min-width: 290px;
+    border: 1px solid var(--main-color-dark-3);
+    background: var(--main-color-dark-2);
+    padding: 3px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.project:hover{
+    box-shadow: 0 0 20px #0fc9725b;
+}
+
+.img-project {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 220px;
+}
+.project:hover .img-project img{
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.img-project img{
+    height: 100%;
+    width: 100%;
+    transition: .2s;
+}
+
+.spans{
+    display: flex;
+    gap: 5px;
+    padding: 8px;
+}
+.spans span{
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color-dark-3);
+    transition: .2s;
+}
+.project:hover .spans span:nth-child(1){
+    background-color: #bb2424;
+}
+.project:hover .spans span:nth-child(2){
+    background-color: #c9bc0f;
+}
+.project:hover .spans span:nth-child(3){
+    background-color: #0a873d;
+}
+
+.btn-and-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.btn-and-info .l{
+    display: flex;
+    gap: 10px;
+}
+.btn-and-info p:nth-child(1){
+    color: var(--main-color-gray);
+}
+.btn-and-info p:nth-child(2){
+    color: var(--main-color-gray-2);
+    font-size: 14px;
+}
+.btn-and-info .r button{
+    padding: 5px 7px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--main-color-gray-2);
+    font-size: 12px;
+    transition: .2s;
+}
+.project:hover .btn-and-info .r button{
+    border: 1px solid var(--main-color-gray-2);
+    transform: rotate(-40deg);
+
+}
+.title-projects{
+    text-align: center;
+    color: var(--main-color-gray);
+    padding: 30px 10px;
+}
+
+/* .title-projects h2{
+    color: var(--main-color-gray-1);
+    font-size: 25px;
+    padding-bottom: 8px;
+    font-style: italic;
+} */
+.title-projects p:nth-child(2){
+    color: var(--main-color-gray-2);
+    font-size: 16px;
+}
+
+.btn-and-info{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: -20px;
+    left: 50%;
+    width: 200px;
+    border-radius: 10px 10px 0 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--main-color-dark-3);
+    border-bottom: 0;
+    background-color: #0a0a0a7c;
+
+}
+
+
+
+
+
+
+@media (max-width:500px) {
+
+    .img-project{
+        height: fit-content;
+    }
+    .img-project img{
+        height: auto;
+    }
+}
+
+
+
+@media (max-width:370px){
+
+    .btn-and-info{
+        transform: translate(-50%,-50%) scale(.8);
+    }
+
+}
+
+
+.projects{
+    opacity: 0;
+    animation: animat_re .5s forwards;
+}
+
+
+@keyframes animat_re {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

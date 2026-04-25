@@ -1,0 +1,133 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: new_font;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: new_font;
+    src: url(../../../../public/fonts/1ZTlEDqU4DtwDJiND8f6qaugUpa0RIDvQl-v7iM6l54-tQEHGgKg4Z9ypiJ7wmiohXwUuz4qqoeiqgwM5fK5pnI.woff);
+}
+
+:root{
+    --main-color-dark:#0a0a0a;
+    --main-color-dark-1:#18181b;
+    --main-color-dark-2:#1A1A1D;
+    --main-color-dark-3:#2A2A2D;
+    --main-color-white:#f1f1f1;
+    --main-color-gray:#cecece;
+    --main-color-gray-2:#a7a7a7;
+    --main-color-green: #0d9c46;
+    --main-color-green-2: #0a873cc0;
+}
+
+
+
+.section-img-and-desc{
+    display: flex;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.desc-about p:nth-child(1){
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: var(--main-color-gray);
+}
+.desc-about p:nth-child(2){
+    padding-bottom: 10px;
+    font-size: 17px;
+    color: var(--main-color-white);
+}
+
+.section-img-and-desc .img{
+    width: 260px;
+    height: 280px;
+    border: var(--main-color-dark-3);
+    border-radius: 10px;
+    flex: none;
+    overflow: hidden;
+    background-color: var(--main-color-dark-3);
+    padding: 5px;
+}
+
+.section-img-and-desc .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sect-sack{
+    padding-bottom: 30px;
+    text-align: start;
+}
+.exp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sect-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 0;
+    justify-content: center;
+    width: 100%;
+}
+.sect-boxes .box{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    border-style: solid ;
+    border-width: 1px ;
+    border-color: #e0e0e062 #a7a7a728 #a7a7a728 #eeeeee36 ;
+    color: #1ebd5d;
+    font-size: 40px;
+    background: linear-gradient(to left , #000,#1b1b1b,#000);
+    transition: .2s;
+}
+
+.sect-boxes .box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #1ebd5e88;
+}
+
+.sect-boxes .box img{
+    width: 40px;
+}
+
+.title-experiance{
+    font-size: 23px;
+    color: var(--main-color-gray);
+}
+.title-stack{
+    font-size: 23px;
+    color: var(--main-color-gray);
+}
+
+
+
+.about{
+    opacity: 0;
+    animation: animat_re .5s forwards;
+}
+
+
+@keyframes animat_re {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

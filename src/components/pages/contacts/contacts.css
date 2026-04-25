@@ -1,0 +1,105 @@
+
+
+.btns-contacts{
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 10px;
+    padding: 30px;
+    width: 100%;
+}
+
+
+
+.desc-contact{
+    color: var(--main-color-gray-2);
+}
+
+
+
+.inputs{
+    display: flex ;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.inputs .inp{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    gap: 3px;
+}
+
+
+
+.inputs .inp p{
+    color: var(--main-color-gray);
+}
+.inputs .inp input{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--main-color-dark-3);
+    border-radius: 7px;
+    color: var(--main-color-gray);
+}
+.inputs .inp textarea{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid var(--main-color-dark-3);
+    border-radius: 7px;
+    color: var(--main-color-gray);
+}
+
+
+
+
+
+.inputs button{
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 1px solid var(--main-color-green); */
+    background: var(--main-color-white);
+    color: var(--main-color-dark-3);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+}
+
+.inputs button:hover{
+    background: #fff;
+    /* color: var(--main-color-white); */
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #ffffff2f;
+}
+
+
+
+.contact{
+    opacity: 0;
+    animation: animat_re .5s forwards;
+}
+
+
+@keyframes animat_re {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
