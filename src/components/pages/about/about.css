@@ -96,8 +96,9 @@
 }
 
 .sect-boxes .box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #1ebd5e88;
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 0 10px #0ebeca71;
+
 }
 
 .sect-boxes .box img{

@@ -8,18 +8,22 @@ function NavBar(){
         <div className="navbar">
             <div className="links">
                 <Link to="/" className={`link ${location.pathname =="/" ?"active":""}`}>
+                    <p className="title_hover">Home</p>
                     <i className="fal fa-home"></i>
                 </Link>
                 {/* <Link to="/" className={`link ${location.pathname =="/works" ?"active":""}`}>
                     <i className="fab fa-hive"></i>
                 </Link> */}
                 <Link to="/projects" className={`link ${location.pathname =="/projects" ?"active":""}`}>
+                    <p className="title_hover">Projects</p>
                     <i className="fal fa-book"></i>
                 </Link>
                 <Link to="/about" className={`link ${location.pathname =="/about" ?"active":""}`}>
+                    <p className="title_hover">About</p>
                     <i className="fal fa-user"></i>
                 </Link>
                 <Link to="/contacts" className={`link ${location.pathname =="/contacts" ?"active":""}`}>
+                    <p className="title_hover">Contact</p>
                     <i className="fal fa-envelope"></i>
                 </Link>
             </div>

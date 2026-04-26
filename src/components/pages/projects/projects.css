@@ -21,7 +21,7 @@
 }
 
 .project:hover{
-    box-shadow: 0 0 20px #0fc9725b;
+    box-shadow: 0 0 30px #077f8871;
 }
 
 .img-project {
@@ -155,6 +155,7 @@
 .projects{
     opacity: 0;
     animation: animat_re .5s forwards;
+
 }
 
 

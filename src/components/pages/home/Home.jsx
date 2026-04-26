@@ -57,7 +57,7 @@ function Home(){
                     
                     <Link to="/contacts">
                         <div className="btn-contact">
-                            <button>Let's work together 
+                            <button className="btn-1">Let's work together 
                                 <i className="fas fa-envelope"></i>
                             </button>
                         </div>
@@ -65,7 +65,7 @@ function Home(){
 
                     <Link to="/contacts">  
                         <div className="btn-contact">
-                            <button>Let's work together 
+                            <button className="btn-2">Let's work together 
                                 <i className="fas fa-calendar-week"></i>
                             </button>
                         </div>
