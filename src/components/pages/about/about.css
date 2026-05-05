@@ -33,13 +33,16 @@
 
 .desc-about p:nth-child(1){
     padding-bottom: 10px;
-    font-size: 18px;
-    color: var(--main-color-gray);
+    font-size: 20px;
+    color: var(--main-color-white);
 }
 .desc-about p:nth-child(2){
     padding-bottom: 10px;
-    font-size: 17px;
-    color: var(--main-color-white);
+    font-size: 15px;
+    color: var(--main-color-gray-2);
+    line-height: 27px;
+    word-spacing: 4px;
+    font-weight: 500;
 }
 
 .section-img-and-desc .img{

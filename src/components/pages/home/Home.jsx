@@ -6,6 +6,12 @@ function Home(){
         <div className="home">
             
             <div className="section-1">
+
+                <div className="btn-online">
+                    <span></span>
+                    Available for work
+                </div>
+
                 <div className="img_main">
                     <img src={img_main} alt="" />
                 </div>
@@ -20,10 +26,7 @@ function Home(){
                         I build performant, user-focused websites where design and functionality work in harmony.
                     </p>
                 </div>
-                <div className="btn-online">
-                    <span></span>
-                    Available for new opportunities
-                </div>
+                
 
                 <div className="social-icons">
                     <a target="_blank" href="https://github.com/0xA7M3D/">
