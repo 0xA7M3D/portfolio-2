@@ -31,28 +31,18 @@ function Home(){
                 <div className="social-icons">
                     <a target="_blank" href="https://github.com/0xA7M3D/">
                         <div className="soc">
-                        <i className="fab fa-github"></i>
-                    </div>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/0xahmed_1/">
-                        <div className="soc">
-                        <i className="fab fa-instagram"></i>
-                    </div>
+                            <i className="fab fa-github"></i>
+                        </div>
                     </a>
                     <a target="_blank" href="https://www.linkedin.com/in/a7meddev">
                         <div className="soc">
-                        <i className="fab fa-linkedin"></i>
-                    </div>
+                            <i className="fab fa-linkedin"></i>
+                        </div>
                     </a>
                     <a target="_blank" href="https://t.me/A7M3D_DeV">
                         <div className="soc">
-                        <i className="fab fa-telegram"></i>
-                    </div>
-                    </a>
-                    <a target="_blank" href="https://wa.me/+201125402541">
-                        <div className="soc">
-                        <i className="fab fa-whatsapp"></i>
-                    </div>
+                            <i className="fab fa-telegram"></i>
+                        </div>
                     </a>
                 </div>
 
